@@ -5,7 +5,7 @@ import productRouter from "./routes/productRouter.js";
 import cors from "cors"
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 8898;
 
 mongoose.connect(
     process.env.MONGO_URL,
